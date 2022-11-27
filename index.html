@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dosei Web</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <div class="grid lg:grid-cols-2 lg:min-h-screen">
+      <div
+        class="px-6 lg:px-12 py-12 text-center lg:text-left flex flex-col items-center lg:block"
+      >
+        <p class="text-sm xl:text-xl mb-3">4:27:19 PM</p>
+        <img
+          src="./assets/images/logo.svg"
+          class="max-w-[120px] xl:max-w-[180px] mb-6"
+          alt=""
+        />
+
+        <h1 class="text-3xl xl:text-6xl font-bold mb-5 xl:mb-8">Login</h1>
+
+        <div class="w-full">
+          <p class="text-base xl:text-2xl mb-6">Enter Access Key:</p>
+
+          <form class="w-full xl:max-w-[386px] mx-auto space-y-4">
+            <input
+              type="text"
+              placeholder="Example: XKSI-2039-FKEL-MNOP"
+              class="bg-secondary text-sm xl:text-base w-full text-center block rounded-lg py-2 px-4 outline-none"
+            />
+
+            <button
+              type="submit"
+              class="py-2 px-4 rounded-lg bg-[rgba(220,220,220,0.6)] w-full text-center block font-bold text-sm xl:text-base"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bg-secondary flex flex-col">
+        <div class="flex-1 px-6 lg:px-12 py-12 flex items-center">
+          <h1
+            class="text-3xl xl:text-6xl font-bold lh-1_3 text-center lg:text-left w-full"
+          >
+            Automation <br class="hidden lg:block" />
+            Flawlessly
+          </h1>
+        </div>
+        <div class="lg:mb-[-2%]">
+          <img src="./assets/images/doodles.svg" class="w-full block" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

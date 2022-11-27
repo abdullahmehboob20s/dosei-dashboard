@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.lh-1 {
+  line-height: 1 !important;
+}
+.lh-1_2 {
+  line-height: 1.2 !important;
+}
+.lh-1_3 {
+  line-height: 1.3 !important;
+}
+.lh-1_4 {
+  line-height: 1.4 !important;
+}
+.lh-1_5 {
+  line-height: 1.5 !important;
+}
+.lh-1_6 {
+  line-height: 1.6 !important;
+}
+.lh-1_7 {
+  line-height: 1.7 !important;
+}
+.lh-1_8 {
+  line-height: 1.8 !important;
+}
+.lh-1_9 {
+  line-height: 1.9 !important;
+}
+
+@layer base {
+  * {
+    @apply font-inter text-white;
+  }
+
+  body,
+  html {
+    @apply bg-main text-white;
+  }
+
+  .calendar-wrapper {
+    @apply grid grid-cols-7 gap-1;
+  }
+  .calendar-date {
+    @apply text-sm text-center rounded py-1 border-b-2 border-transparent;
+  }
+
+  .calendar-date.active {
+    @apply bg-[rgba(54,54,54,0.7)] border-b-2 border-primary;
+  }
+
+  .sidebar-link {
+    @apply relative flex items-center text-sm font-bold rounded-md py-1 px-2 w-full;
+  }
+
+  .sidebar-link-icon {
+    @apply w-[30px] flex text-xl;
+  }
+
+  .sidebar-link.active {
+    @apply bg-[rgba(54,54,54,0.7)] before:absolute before:top-[110%] before:left-0 before:w-full before:h-[2px] before:bg-primary;
+  }
+
+  /*  */
+  .money-card {
+    @apply bg-gray-2 rounded-lg py-6 xl:py-8 px-7 flex items-center space-x-4 xl:space-x-8;
+  }
+
+  .money-card .card-img {
+    @apply max-w-[40px] sm:max-w-[50px] xl:max-w-[70px];
+  }
+
+  .money-card .text-list {
+    @apply space-y-1 xl:space-y-2;
+  }
+
+  .money-card .title {
+    @apply text-sm xl:text-xl font-bold;
+  }
+
+  /*  */
+  .card-heading {
+    @apply text-base xl:text-xl text-white font-bold mb-6;
+  }
+
+  /* SIDEBAR */
+  .sidebar-drawer {
+    @apply -translate-x-[200px] lg:translate-x-0;
+  }
+
+  /* GROUP */
+  .group-card {
+    @apply relative rounded p-2;
+  }
+
+  .group-card.active {
+    @apply bg-whiteGrayish-200 before:absolute before:top-[108%] before:left-0 before:w-full before:h-[3px] before:bg-primary;
+  }
+
+  /* groups-table */
+  .groups-table {
+    @apply table-fixed max-w-full min-w-[800px] w-full border-collapse overflow-hidden overflow-x-scroll;
+  }
+
+  .groups-table th:nth-child(1) {
+    @apply w-[5%_!important];
+  }
+
+  .groups-table tbody {
+    @apply bg-gray-2 rounded-lg;
+  }
+
+  .groups-table td,
+  .groups-table th {
+    @apply relative text-center text-ellipsis p-2 text-sm whitespace-nowrap overflow-hidden;
+  }
+
+  /* BUTTONS */
+  .task-button {
+    @apply py-1 xl:py-2 px-3 xl:px-4 flex items-center space-x-3 text-xs xl:text-sm rounded;
+  }
+
+  .task-sidebar-revealer {
+    @apply translate-x-[260px] lg:translate-x-0;
+  }
+}
+
+.black-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100 !important;
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.black-screen.show {
+  opacity: 1;
+  pointer-events: visible;
+}

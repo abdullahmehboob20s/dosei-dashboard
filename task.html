@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script
+      defer
+      src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"
+    ></script>
+    <script src="./app.js" defer></script>
+    <script src="./task-app.js" defer></script>
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-secondary lg:ml-[200px] grid lg:grid-cols-[260px_1fr]"
+    >
+      <div
+        class="fixed lg:static top-0 lg:top-[unset] right-0 lg:right-[unset] w-[260px] lg:w-auto z-[200] lg:z-auto bg-main lg:bg-secondary min-h-screen py-4 px-4 overflow-y-auto transition-all duration-300 task-sidebar-revealer"
+        id="task-sidebar"
+      >
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base font-bold">Task Groups</h1>
+            <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+          </div>
+
+          <button
+            class="w-5 h-5 rounded bg-whiteGrayish-200 flex items-center justify-center text-xl"
+          >
+            <iconify-icon icon="material-symbols:add"></iconify-icon>
+          </button>
+        </div>
+
+        <p class="text-base text-whiteGrayish-700 mb-6">5 Groups</p>
+
+        <div class="space-y-4">
+          <div class="group-card active">
+            <div class="flex items-center space-x-2 mb-1">
+              <h1 class="text-xs font-bold">Task Group 1</h1>
+              <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+            </div>
+            <p class="text-whiteGrayish-600 text-xs mb-1">2 Tasks</p>
+
+            <div class="flex items-center justify-between">
+              <p class="text-whiteGrayish-600 text-xs mb-1">YeezySupply</p>
+
+              <div class="flex items-center space-x-1">
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#087E0D] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </div>
+
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#BCBE3B] rounded px-2 text-xs"
+                >
+                  <iconify-icon
+                    icon="material-symbols:shopping-cart"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#862323] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-card">
+            <div class="flex items-center space-x-2 mb-1">
+              <h1 class="text-xs font-bold">Task Group 1</h1>
+              <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+            </div>
+            <p class="text-whiteGrayish-600 text-xs mb-1">2 Tasks</p>
+
+            <div class="flex items-center justify-between">
+              <p class="text-whiteGrayish-600 text-xs mb-1">YeezySupply</p>
+
+              <div class="flex items-center space-x-1">
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#087E0D] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </div>
+
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#BCBE3B] rounded px-2 text-xs"
+                >
+                  <iconify-icon
+                    icon="material-symbols:shopping-cart"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#862323] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-card">
+            <div class="flex items-center space-x-2 mb-1">
+              <h1 class="text-xs font-bold">Task Group 1</h1>
+              <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+            </div>
+            <p class="text-whiteGrayish-600 text-xs mb-1">2 Tasks</p>
+
+            <div class="flex items-center justify-between">
+              <p class="text-whiteGrayish-600 text-xs mb-1">YeezySupply</p>
+
+              <div class="flex items-center space-x-1">
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#087E0D] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </div>
+
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#BCBE3B] rounded px-2 text-xs"
+                >
+                  <iconify-icon
+                    icon="material-symbols:shopping-cart"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#862323] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-card">
+            <div class="flex items-center space-x-2 mb-1">
+              <h1 class="text-xs font-bold">Task Group 1</h1>
+              <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+            </div>
+            <p class="text-whiteGrayish-600 text-xs mb-1">2 Tasks</p>
+
+            <div class="flex items-center justify-between">
+              <p class="text-whiteGrayish-600 text-xs mb-1">YeezySupply</p>
+
+              <div class="flex items-center space-x-1">
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#087E0D] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </div>
+
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#BCBE3B] rounded px-2 text-xs"
+                >
+                  <iconify-icon
+                    icon="material-symbols:shopping-cart"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#862323] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-card">
+            <div class="flex items-center space-x-2 mb-1">
+              <h1 class="text-xs font-bold">Task Group 1</h1>
+              <div class="w-[9px] h-[9px] bg-[#FF4B4B] rounded-full"></div>
+            </div>
+            <p class="text-whiteGrayish-600 text-xs mb-1">2 Tasks</p>
+
+            <div class="flex items-center justify-between">
+              <p class="text-whiteGrayish-600 text-xs mb-1">YeezySupply</p>
+
+              <div class="flex items-center space-x-1">
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#087E0D] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </div>
+
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#BCBE3B] rounded px-2 text-xs"
+                >
+                  <iconify-icon
+                    icon="material-symbols:shopping-cart"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="flex-1 h-4 flex items-center justify-center bg-[#862323] rounded px-2 text-xs"
+                >
+                  <iconify-icon icon="material-symbols:close"></iconify-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5 lg:py-4 px-4 flex flex-col min-w-full">
+        <div class="relative mb-6 lg:mb-4 flex items-center justify-between">
+          <p class="text-xs lg:text-base text-white">4:27:19 PM</p>
+
+          <p
+            class="text-base md:text-xl xl:text-2xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            Task Group 1
+          </p>
+
+          <div class="flex items-center space-x-4">
+            <button
+              class="bg-whiteGrayish-200 py-1 px-2 rounded text-xs"
+              id="task-revealer"
+            >
+              Tasks
+            </button>
+
+            <button class="text-2xl flex lg:hidden" id="hamburger-btn">
+              <iconify-icon icon="charm:menu-hamburger"></iconify-icon>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 items-start sm:items-center sm:justify-between mb-5"
+        >
+          <button class="task-button bg-[rgba(91,168,185,0.7)]">
+            <span>Set Delays</span>
+            <iconify-icon icon="mdi:clock-time-five"></iconify-icon>
+          </button>
+
+          <div class="flex items-center space-x-4">
+            <button class="task-button bg-[#16ABFF]">
+              <span>Start All</span>
+              <iconify-icon
+                class="text-xl"
+                icon="material-symbols:play-arrow-rounded"
+              ></iconify-icon>
+            </button>
+            <button class="task-button bg-[#9038FF]">
+              <span>Stop All</span>
+              <iconify-icon
+                icon="material-symbols:stop"
+                class="text-xl"
+              ></iconify-icon>
+            </button>
+
+            <div class="flex items-center space-x-2">
+              <button
+                class="w-8 h-8 rounded bg-whiteGrayish-200 flex items-center justify-center text-xl"
+              >
+                <iconify-icon icon="material-symbols:add"></iconify-icon>
+              </button>
+              <button
+                class="w-8 h-8 rounded bg-whiteGrayish-200 flex items-center justify-center text-xl"
+              >
+                <iconify-icon icon="material-symbols:edit"></iconify-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto w-full min-w-full block relative">
+          <table class="groups-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Site</th>
+                <th>Mode</th>
+                <th>Product</th>
+                <th>Size</th>
+                <th>Proxy</th>
+                <th>Profile</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Yeezy Supply</td>
+                <td>SPLASH</td>
+                <td>BY9612</td>
+                <td>Rando...</td>
+                <td>Dosei Pr...</td>
+                <td>Test VCC...</td>
+                <td>Idle</td>
+                <td>
+                  <div class="flex items-center justify-center space-x-1">
+                    <button class="flex">
+                      <iconify-icon
+                        icon="material-symbols:play-arrow-rounded"
+                        class="text-2xl"
+                      ></iconify-icon>
+                    </button>
+                    <button class="flex">
+                      <iconify-icon
+                        icon="material-symbols:edit"
+                        class="text-base"
+                      ></iconify-icon>
+                    </button>
+                    <button class="flex">
+                      <iconify-icon
+                        icon="ic:baseline-delete"
+                        class="text-lg"
+                      ></iconify-icon>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>Yeezy Supply</td>
+                <td>SPLASH</td>
+                <td>BY9612</td>
+                <td>Rando...</td>
+                <td>Dosei Pr...</td>
+                <td>Test VCC...</td>
+                <td>Idle</td>
+                <td>
+                  <div class="flex items-center justify-center space-x-1">
+                    <button class="flex">
+                      <iconify-icon
+                        icon="material-symbols:play-arrow-rounded"
+                        class="text-2xl"
+                      ></iconify-icon>
+                    </button>
+                    <button class="flex">
+                      <iconify-icon
+                        icon="material-symbols:edit"
+                        class="text-base"
+                      ></iconify-icon>
+                    </button>
+                    <button class="flex">
+                      <iconify-icon
+                        icon="ic:baseline-delete"
+                        class="text-lg"
+                      ></iconify-icon>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR STARTS -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 bg-main w-[200px] h-screen px-4 flex flex-col pb-8 overflow-y-auto transition-all duration-300 sidebar-drawer z-[200]"
+    >
+      <div class="mb-8">
+        <img
+          src="./assets/images/sidebar-logo.svg"
+          class="w-full mb-6"
+          alt=""
+        />
+
+        <button class="sidebar-link active">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ri:home-2-line"></iconify-icon>
+          </div>
+          <span>Home</span>
+        </button>
+      </div>
+
+      <div class="space-y-2 flex-1 pb-6">
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="uis:bars"></iconify-icon>
+          </div>
+          <span>Tasks</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ph:globe"></iconify-icon>
+          </div>
+          <span>Proxies</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon
+              icon="material-symbols:account-balance-wallet-outline"
+            ></iconify-icon>
+          </div>
+          <span>Profiles</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="fluent:people-team-20-regular"></iconify-icon>
+          </div>
+          <span>Accounts</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="fa6-solid:circle-nodes"></iconify-icon>
+          </div>
+          <span>Captchas</span>
+        </button>
+      </div>
+
+      <div class="space-y-2">
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ep:setting"></iconify-icon>
+          </div>
+          <span>Settings</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="prime:wrench"></iconify-icon>
+          </div>
+          <span>Updates</span>
+        </button>
+      </div>
+    </div>
+    <!-- SIDEBAR ENDS -->
+
+    <div class="black-screen"></div>
+  </body>
+</html>

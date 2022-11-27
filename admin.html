@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script
+      defer
+      src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"
+    ></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-secondary px-6 lg:px-10 py-8 lg:ml-[200px]">
+      <!-- HEADER STARTS -->
+      <div
+        class="grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] lg:grid-cols-[auto_auto] items-center justify-between mb-10 gap-6"
+      >
+        <div
+          class="flex items-center space-x-4 col-start-1 col-end-2 row-start-1 row-end-2 sm:row-start-auto sm:row-end-auto sm:col-start-auto sm:col-end-auto"
+        >
+          <img
+            src="./assets/images/logo.svg"
+            class="max-w-[100px] xl:max-w-[120px]"
+            alt=""
+          />
+          <h1 class="text-sm xl:text-base">4:27:19 PMl</h1>
+        </div>
+
+        <div
+          class="flex items-center space-x-6 col-span-2 sm:col-span-1 row-start-2 row-end-3 sm:row-start-auto sm:row-end-auto justify-between sm:justify-start"
+        >
+          <button
+            class="w-fit bg-gray-2 rounded-lg flex items-center space-x-3 py-2 px-3 text-sm"
+          >
+            <img src="./assets/images/metamask.png" class="w-[20px]" alt="" />
+            <div class="w-2 h-2 rounded-full bg-green"></div>
+            <span> Connected </span>
+          </button>
+
+          <div class="w-10 xl:w-12 h-10 xl:h-12 rounded-full overflow-hidden">
+            <img src="./assets/images/cat.svg" class="w-full h-full" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="col-start-2 col-end-3 sm:col-start-auto sm:col-end-auto row-start-1 row-end-2 sm:row-start-auto sm:row-end-auto"
+        >
+          <button class="text-2xl flex lg:hidden" id="hamburger-btn">
+            <iconify-icon icon="charm:menu-hamburger"></iconify-icon>
+          </button>
+        </div>
+      </div>
+      <!-- HEADER ENDS -->
+
+      <h1 class="text-xl xl:text-3xl font-bold mb-8">Welcome Back, Admin</h1>
+
+      <!-- GRID STARTS -->
+      <div
+        class="grid md:grid-cols-2 xl:grid-cols-[2fr_1fr] gap-6 content-start"
+      >
+        <div class="grid xl:grid-cols-2 gap-6 content-start">
+          <div class="money-card">
+            <img src="./assets/images/green-tick.png" class="card-img" alt="" />
+
+            <div class="text-list">
+              <p class="title">$2438 Spent</p>
+              <p class="title">1.2 ETH Spent</p>
+            </div>
+          </div>
+          <div class="money-card">
+            <img src="./assets/images/cross.png" class="card-img" alt="" />
+
+            <div class="text-list">
+              <p class="title">12</p>
+            </div>
+          </div>
+          <div class="bg-gray-2 rounded-lg p-6">
+            <h1 class="card-heading">Recent Purchases</h1>
+
+            <div class="space-y-4">
+              <div
+                class="flex items-center space-x-4 pb-4 border-b-2 border-gray-main"
+              >
+                <div class="w-[130px]">
+                  <img src="./assets/images/item.png" class="w-full" alt="" />
+                </div>
+                <div class="space-y-1">
+                  <p class="text-xs">8-2-2022 8:47:06 PM</p>
+                  <p class="text-xs">Site: Yeezysupply</p>
+                  <p class="text-xs">YZY Foam RNR Onyx - Mens</p>
+                  <p class="text-xs">Price: $90</p>
+                  <a href="/" class="text-xs block w-fit text-link"
+                    >View Profile Info</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-2 rounded-lg p-6">
+            <h1 class="card-heading">Patch Notes</h1>
+
+            <div class="pb-4 border-b-2 border-gray-main">
+              <p class="text-lg mb-2">v0.01 - Initial MVP</p>
+              <div class="space-y-1 mb-3">
+                <p class="text-white opacity-80 text-xs md:text-sm">
+                  -Home Dashboard
+                </p>
+                <p class="text-white opacity-80 text-xs md:text-sm">
+                  -Shopify Module
+                </p>
+                <p class="text-white opacity-80 text-xs md:text-sm">
+                  -Ethereum Module
+                </p>
+                <p class="text-white opacity-80 text-xs md:text-sm">
+                  -Settings Implemented
+                </p>
+                <p class="text-white opacity-80 text-xs md:text-sm">
+                  -Gmail Sign-In
+                </p>
+              </div>
+
+              <div class="flex items-center justify-end">
+                <a href="/" class="text-xs block w-fit text-link">View More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3RD COLUMN -->
+        <div class="grid gap-6 items-start content-start">
+          <div class="bg-gray-2 rounded-lg py-8 px-7">
+            <p class="card-heading">August</p>
+
+            <div class="calendar-wrapper">
+              <p class="calendar-date">1</p>
+              <p class="calendar-date">2</p>
+              <p class="calendar-date">3</p>
+              <p class="calendar-date">4</p>
+              <p class="calendar-date">5</p>
+              <p class="calendar-date">6</p>
+              <p class="calendar-date">7</p>
+              <p class="calendar-date">8</p>
+              <p class="calendar-date">9</p>
+              <p class="calendar-date">10</p>
+              <p class="calendar-date">11</p>
+              <p class="calendar-date">12</p>
+              <p class="calendar-date">13</p>
+              <p class="calendar-date">14</p>
+              <p class="calendar-date">15</p>
+              <p class="calendar-date">16</p>
+              <p class="calendar-date">17</p>
+              <p class="calendar-date">18</p>
+              <p class="calendar-date active">19</p>
+              <p class="calendar-date">20</p>
+              <p class="calendar-date">21</p>
+              <p class="calendar-date">22</p>
+              <p class="calendar-date">23</p>
+              <p class="calendar-date">24</p>
+              <p class="calendar-date">25</p>
+              <p class="calendar-date">26</p>
+              <p class="calendar-date">27</p>
+              <p class="calendar-date">28</p>
+              <p class="calendar-date">29</p>
+              <p class="calendar-date">30</p>
+              <p class="calendar-date">31</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-2 rounded-lg py-8 px-7">
+            <p class="card-heading">August 26th Releases</p>
+
+            <div
+              class="flex items-center space-x-4 pb-4 border-b-2 border-gray-main"
+            >
+              <div class="w-[130px]">
+                <img src="./assets/images/item.png" class="w-full" alt="" />
+              </div>
+              <div class="space-y-1">
+                <p class="text-xs">YZY Foam RNR Sand Mens</p>
+                <p class="text-xs">Price: $90</p>
+                <div class="pt-2">
+                  <button
+                    class="text-sm block w-full bg-purple py-1 px-2 text-white rounded text-left"
+                  >
+                    Make Tasks
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRID ENDS -->
+    </div>
+
+    <!-- SIDEBAR STARTS -->
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 bg-main w-[200px] h-screen px-4 flex flex-col pb-8 overflow-y-auto transition-all duration-300 sidebar-drawer z-[200]"
+    >
+      <div class="mb-8">
+        <img
+          src="./assets/images/sidebar-logo.svg"
+          class="w-full mb-6"
+          alt=""
+        />
+
+        <button class="sidebar-link active">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ri:home-2-line"></iconify-icon>
+          </div>
+          <span>Home</span>
+        </button>
+      </div>
+
+      <div class="space-y-2 flex-1 pb-6">
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="uis:bars"></iconify-icon>
+          </div>
+          <span>Tasks</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ph:globe"></iconify-icon>
+          </div>
+          <span>Proxies</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon
+              icon="material-symbols:account-balance-wallet-outline"
+            ></iconify-icon>
+          </div>
+          <span>Profiles</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="fluent:people-team-20-regular"></iconify-icon>
+          </div>
+          <span>Accounts</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="fa6-solid:circle-nodes"></iconify-icon>
+          </div>
+          <span>Captchas</span>
+        </button>
+      </div>
+
+      <div class="space-y-2">
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="ep:setting"></iconify-icon>
+          </div>
+          <span>Settings</span>
+        </button>
+        <button class="sidebar-link">
+          <div class="sidebar-link-icon">
+            <iconify-icon icon="prime:wrench"></iconify-icon>
+          </div>
+          <span>Updates</span>
+        </button>
+      </div>
+    </div>
+    <!-- SIDEBAR ENDS -->
+
+    <div class="black-screen"></div>
+  </body>
+</html>
